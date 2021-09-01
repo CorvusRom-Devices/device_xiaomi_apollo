@@ -9,5 +9,5 @@
     "target_path" : "vendor/xiaomi/",
     "branch"      : "main",
     "remote"      : "github"
-  },
+  }
 ]
