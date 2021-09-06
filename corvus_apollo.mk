@@ -14,17 +14,8 @@ $(call inherit-product, device/xiaomi/apollo/device.mk)
 # Inherit some common Corvus-OS stuff.
 $(call inherit-product, vendor/corvus/config/common_full_phone.mk)
 
-# Gapps
-TARGET_GAPPS_ARCH := arm64
-USE_GAPPS := true
-
-#Pixel offline charge animation
-TARGET_INCLUDE_PIXEL_CHARGER := true
-
-#Official
+# Corvus official stuff
 RAVEN_LAIR := Official
-
-# Maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.corvus.maintainer=sewa2k
 CORVUS_MAINTAINER := sewa2k
@@ -32,6 +23,12 @@ CORVUS_MAINTAINER := sewa2k
 # proton-clang
 USE_PROTON := true
 
+# Gapps
+TARGET_GAPPS_ARCH := arm64
+USE_GAPPS := true
+
+# Pixel offline charge animation
+TARGET_INCLUDE_PIXEL_CHARGER := true
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 scr_resolution := 1080
