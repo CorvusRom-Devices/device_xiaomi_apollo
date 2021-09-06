@@ -29,6 +29,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.corvus.maintainer=sewa2k
 CORVUS_MAINTAINER := sewa2k
 
+# proton-clang
+USE_PROTON := true
+
 
 TARGET_FACE_UNLOCK_SUPPORTED := true
 scr_resolution := 1080
